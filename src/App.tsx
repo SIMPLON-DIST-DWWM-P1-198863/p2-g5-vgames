@@ -1,13 +1,13 @@
-import './App.css'
-import Home from './pages/Home'
-import BurgerMenu from './components/BurgerMenu/BurgerMenu'
+import Footer from "./components/footer";
+import Home from "./pages/Home";
 
 function App() {
-  return ( <div className="App">
-    <BurgerMenu />
+  return (
+    <>
     <Home />
-  </div>
-  )
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
