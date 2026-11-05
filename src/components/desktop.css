@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+  .footer {
+    padding: 1.5rem 3rem;
+  }
+
+  .logo {
+    height: 3.5rem;
+  }
+
+  .bouton-contact {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .footer-droite {
+    gap: 1rem;
+  }
+
+  .reseaux {
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+}
