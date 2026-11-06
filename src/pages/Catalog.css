@@ -1,0 +1,213 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+.catalog-page {
+  min-height: 100vh;
+  background-color: #121212;
+  color: #eaeaea;
+  font-family: "Marcellus", serif;
+}
+
+.catalog-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.catalog-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.catalog-intro h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.catalog-intro p {
+  max-width: 40rem;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #bcbcbc;
+}
+
+.catalog-search {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.catalog-search input {
+  flex: 1;
+  min-width: 0;
+  padding: 1rem;
+  border: 0.0625rem solid #404040;
+  border-radius: 0.5rem;
+  background: #222;
+  color: #eaeaea;
+  font: inherit;
+}
+
+.catalog-search input:focus {
+  outline: 0.125rem solid #c70039;
+}
+
+.catalog-search button {
+  background-color: #c70039;
+  color: #fff;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.catalog-search button:hover {
+  background-color: #e00040;
+}
+
+.catalog-controls {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.catalog-control {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.catalog-control label {
+  font-size: 0.9rem;
+  color: #bcbcbc;
+}
+
+.catalog-control select {
+  width: 100%;
+  background-color: #222;
+  color: #eaeaea;
+  border: 0.0625rem solid #404040;
+  border-radius: 0.5rem;
+  padding: 0.9rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.catalog-control select:focus {
+  outline: 0.125rem solid #c70039;
+}
+
+.catalog-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 0.125rem solid #c70039;
+  padding-bottom: 1rem;
+}
+
+.catalog-heading h2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.catalog-heading p {
+  color: #bcbcbc;
+  font-size: 0.9rem;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-color: #222;
+  border: 0.0625rem solid #343434;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.catalog-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.catalog-card:hover {
+  transform: translateY(-0.4rem);
+  border-color: #c70039;
+}
+
+.catalog-card:focus-visible {
+  outline: 0.15rem solid #c70039;
+  outline-offset: 0.2rem;
+}
+
+.catalog-empty {
+  text-align: center;
+  padding: 3rem;
+  color: #bcbcbc;
+}
+
+@media (max-width: 55rem) {
+  .catalog-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 40rem) {
+  .catalog-page {
+    padding: 2rem 1rem;
+  }
+
+  .catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .catalog-controls {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .catalog-search {
+    flex-direction: column;
+  }
+}
+
+.catalog-bottom {
+  background-color: #eaeaea;
+  color: #121212;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.catalog-bottom h2 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.catalog-bottom p {
+  max-width: 40rem;
+  margin: 0 auto;
+  line-height: 1.8;
+}

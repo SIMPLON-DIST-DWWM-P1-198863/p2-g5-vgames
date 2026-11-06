@@ -1,5 +1,6 @@
 import GameList from "../components/GameList";
 import "./Home.css";
+import Footer from "../components/footer";
 
 function Home() {
   return (
@@ -75,6 +76,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
