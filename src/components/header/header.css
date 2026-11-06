@@ -1,0 +1,37 @@
+
+.header {
+  background-color: #EAEAEA;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  color: #c70039;
+}
+
+.header__logo {
+  position: absolute;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.header__logo img {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+
+.header__logo h1 {
+  font-family: 'Marcellus', serif;
+  font-size: 28px;
+  margin: 0;
+}
+
+
+.header__burger,
+.header__search {
+  display: flex;
+  align-items: center;
+}
