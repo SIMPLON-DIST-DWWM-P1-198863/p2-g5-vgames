@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+.footer {
+  background-color: #121212;
+  color: #eaeaea;
+  font-family: "Marcellus", serif;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer-gauche,
+.footer-milieu,
+.footer-droite {
+  width: 34%;
+  display: flex;
+}
+
+.footer-milieu {
+  justify-content: center;
+}
+
+.footer-droite {
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.logo {
+  height: 2.5rem;
+  max-width: 100%;
+}
+
+.bouton-contact {
+  background-color: #c70039;
+  color: #eaeaea;
+  font-family: inherit;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.bouton-contact:hover {
+  background-color: #eaeaea;
+  color: #c70039;
+}
+
+.reseaux {
+  height: 1.25rem;
+  width: 1.25rem;
+}
