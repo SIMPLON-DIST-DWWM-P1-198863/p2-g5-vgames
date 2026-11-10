@@ -1,22 +1,32 @@
-/* import { useEffect, useState } from "react";
+interface SelectedGame {
+  image: string;
+  title: string;
+  genre: string;
+  platforms: string;
+  releaseDate: string;
+  developer: string;
+  rating: number;
+}
+
+import { useEffect, useState } from "react";
 const apiKey = import.meta.env.VITE_GAMESDB_API_KEY;
 
 function SelectedGame() {
-  const [game, setGame] = useState(null);
+  const [game, setGame] = useState<SelectedGame | null>(null);
 
   useEffect(() => {
-    // Simulate an API call to fetch the selected game
     const fetchGame = async () => {
       try {
-      const response = await fetch(
-        `https://api.thegamesdb.net/v1/Games/ByGameName?apikey=${apiKey}&name=Zelda`,
-      );
-      const data = await response.json();
-      setGame(data);
-    } catch (error) {
-      console.error("Erreur lors de la récupération du jeu :", error);
-    }
-
+        const response = await fetch(
+          `https://api.thegamesdb.net/v1/Games/ByGameName?apikey=${apiKey}&name=Zelda`,
+        );
+        const data = await response.json();
+        console.log(data.data.games);
+        setGame(data);
+      } catch (error) {
+        console.error("Erreur lors de la récupération du jeu :", error);
+      }
+    };
     fetchGame();
   }, []);
 
@@ -56,4 +66,4 @@ function SelectedGame() {
   );
 }
 
-export default SelectedGame */
+export default SelectedGame;
