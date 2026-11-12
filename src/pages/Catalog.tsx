@@ -167,7 +167,17 @@ function Catalog() {
               return (
                 <li key={game.id}>
                   <a className="catalog-card" href={`/games/${game.id}`}>
-                    <img src={game.image} alt={game.title} loading="lazy" />
+                    <div className="catalog-card-image">
+                      <img src={game.image} alt={game.title} loading="lazy" />
+                    </div>
+
+                    <div className="catalog-card-info">
+                      <h3 className="catalog-card-title">{game.title}</h3>
+
+                      <p className="catalog-card-genre">{game.genre}</p>
+
+                      <p className="catalog-card-price">{game.price} €</p>
+                    </div>
                   </a>
                 </li>
               );
