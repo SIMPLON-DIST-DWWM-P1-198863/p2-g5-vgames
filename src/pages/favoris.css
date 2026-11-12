@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+.favoris {
+  background-color: #121212;
+  color: #eaeaea;
+  font-family: "Marcellus", serif;
+  padding: 1.5rem 1rem;
+}
+
+.favoris-titre {
+  color: #c70039;
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.favoris-vide {
+  text-align: center;
+}
+
+.favoris-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.favoris-carte {
+  box-sizing: border-box;
+  border: 0.125rem solid #c70039;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.favoris-image {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.favoris-nom {
+  margin: 1rem 0 0;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.favoris-basTxt {
+  text-align: center;
+}
+
+.favoris-bas {
+  display: inline-block;
+  border: 2px solid #c70039;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  margin-top: 25rem;
+}
