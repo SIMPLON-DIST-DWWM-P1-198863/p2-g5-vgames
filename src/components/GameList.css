@@ -1,0 +1,30 @@
+.game-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.game-list a {
+  display: block;
+  width: min(100%, 14rem);
+  transition: transform 0.25s ease;
+}
+
+.game-list a:hover {
+  transform: translateY(-0.5rem);
+}
+
+.game-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.4rem;
+}
+
+@media (max-width: 40rem) {
+  .game-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
