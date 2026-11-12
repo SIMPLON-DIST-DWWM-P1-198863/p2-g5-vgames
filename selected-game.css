@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+main {
+  background-color: #121212;
+  color: #eaeaea;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.game-infos {
+  background-color: #eaeaea;
+  color: #121212;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.game-header {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.game-header img {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.game-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.game-details button {
+  background-color: #c70039;
+  color: #eaeaea;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.game-description {
+  background-color: #eaeaea;
+  color: #121212;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.game-suggestions {
+  background-color: #eaeaea;
+  color: #121212;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 150px;
+}
