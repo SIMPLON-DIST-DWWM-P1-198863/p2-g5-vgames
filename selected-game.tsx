@@ -9,7 +9,6 @@ interface SelectedGame {
 }
 
 import { useEffect, useState } from "react";
-const apiKey = import.meta.env.VITE_GAMESDB_API_KEY;
 
 function SelectedGame() {
   const [game, setGame] = useState<SelectedGame | null>(null);
@@ -17,15 +16,10 @@ function SelectedGame() {
   useEffect(() => {
     const fetchGame = async () => {
       try {
-        const response = await fetch(
-          `https://api.thegamesdb.net/v1/Games/ByGameName?apikey=${apiKey}&name=Zelda`,
-        );
+        const response = await fetch();
         const data = await response.json();
-        console.log(data.data.games);
         setGame(data);
-      } catch (error) {
-        console.error("Erreur lors de la récupération du jeu :", error);
-      }
+      } catch (error) {}
     };
     fetchGame();
   }, []);
