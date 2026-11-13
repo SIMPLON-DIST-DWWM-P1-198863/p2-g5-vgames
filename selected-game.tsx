@@ -9,6 +9,7 @@ interface SelectedGame {
 }
 
 import { useEffect, useState } from "react";
+import "../selected-game.css";
 
 function SelectedGame() {
   const [game, setGame] = useState<SelectedGame | null>(null);
@@ -21,7 +22,12 @@ function SelectedGame() {
         );
         const data = await response.json();
         setGame(data);
-      } catch (error) {}
+      } catch (error) {
+        console.error(
+          "Erreur lors de la récupération des données du jeu :",
+          error,
+        );
+      }
     };
     fetchGame();
   }, []);
