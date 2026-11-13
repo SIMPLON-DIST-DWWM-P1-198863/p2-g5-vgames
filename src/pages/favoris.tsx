@@ -9,7 +9,7 @@ type Jeu = {
   image: string;
 };
 
-export default function Favoris() {
+export default function favoris() {
   const [tousLesJeux, setTousLesJeux] = useState<Jeu[]>([]);
 
   useEffect(() => {
