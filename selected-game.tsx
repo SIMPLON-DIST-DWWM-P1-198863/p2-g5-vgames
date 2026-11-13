@@ -16,7 +16,9 @@ function SelectedGame() {
   useEffect(() => {
     const fetchGame = async () => {
       try {
-        const response = await fetch();
+        const response = await fetch(
+          "https://materiel-apprentissage.github.io/api/video-games.json",
+        );
         const data = await response.json();
         setGame(data);
       } catch (error) {}
