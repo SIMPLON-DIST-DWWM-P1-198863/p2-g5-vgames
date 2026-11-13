@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./BurgerMenu.css";
 
 function BurgerMenu() {
@@ -23,21 +24,21 @@ function BurgerMenu() {
       >
         <ul className="burger-menu__links">
           <li>
-            <a href="/" onClick={() => setMenuOuvert(false)}>
+            <Link to="/" onClick={() => setMenuOuvert(false)}>
               Accueil
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="/" onClick={() => setMenuOuvert(false)}>
+            <Link to="/" onClick={() => setMenuOuvert(false)}>
               Jeux-vidéos
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="/" onClick={() => setMenuOuvert(false)}>
+            <Link to="/favoris" onClick={() => setMenuOuvert(false)}>
               Favoris
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+  .favoris {
+    padding: 2rem 3rem;
+    min-height: 52rem;
+  }
+
+  .favoris-titre {
+    font-size: 2.5rem;
+  }
+
+  .favoris-liste {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .favoris-carte {
+    width: 30%;
+  }
+}
