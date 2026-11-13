@@ -31,11 +31,15 @@
 }
 
 .bouton-contact {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
   background-color: #c70039;
   color: #eaeaea;
   font-family: inherit;
   border: none;
   border-radius: 2rem;
+  text-decoration: none;
+  text-align: center;
   cursor: pointer;
 }
 

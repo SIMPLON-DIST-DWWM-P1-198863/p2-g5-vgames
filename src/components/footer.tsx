@@ -16,7 +16,9 @@ export default function Footer() {
       </div>
 
       <div className="footer-milieu">
-        <button className="bouton-contact">Nous contacter</button>
+        <a href="/contact" className="bouton-contact">
+          Nous contacter
+        </a>
       </div>
 
       <div className="footer-droite">

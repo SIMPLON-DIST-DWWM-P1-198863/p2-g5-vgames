@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+.support-page {
+  min-height: 100vh;
+  font-family: "Marcellus", serif;
+}
+
+.support-hero {
+  background-color: #121212;
+  color: #eaeaea;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.support-label {
+  color: #c70039;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.support-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+}
+
+.support-hero > p:last-child {
+  max-width: 40rem;
+  margin: 0 auto;
+  color: #bcbcbc;
+  line-height: 1.8;
+}
+
+.support-content {
+  background-color: #eaeaea;
+  color: #121212;
+  padding: 5rem 2rem;
+}
+
+.support-container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.support-heading {
+  margin-bottom: 2rem;
+}
+
+.support-heading h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 0.75rem;
+}
+
+.support-heading p {
+  color: #666666;
+  line-height: 1.7;
+}
+
+.support-form {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  border: 0.0625rem solid #dddddd;
+}
+
+.support-form-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.support-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.7rem;
+  margin-bottom: 1.5rem;
+  min-width: 0;
+}
+
+.support-field label {
+  font-size: 0.95rem;
+}
+
+.support-field input,
+.support-field select,
+.support-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  background-color: #f7f7f7;
+  color: #121212;
+  border: 0.0625rem solid #d5d5d5;
+  border-radius: 0.4rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.support-field textarea {
+  resize: vertical;
+  min-height: 9rem;
+}
+
+.support-field input:focus,
+.support-field select:focus,
+.support-field textarea:focus {
+  outline: 0.125rem solid #c70039;
+  border-color: #c70039;
+}
+
+.support-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  background-color: #c70039;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.support-button:hover {
+  background-color: #a90030;
+}
+
+.support-button:focus-visible {
+  outline: 0.125rem solid #121212;
+  outline-offset: 0.2rem;
+}
+
+.support-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.support-loader {
+  width: 1rem;
+  height: 1rem;
+  border: 0.15rem solid #ffffff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: support-spin 0.8s linear infinite;
+}
+
+@keyframes support-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.support-form-note {
+  color: #777777;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
+.support-success {
+  background-color: #e9f7ee;
+  color: #206c38;
+  border: 0.0625rem solid #b8dfc4;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.support-faq {
+  margin-top: 5rem;
+}
+
+.support-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.support-question {
+  background-color: #ffffff;
+  border: 0.0625rem solid #dddddd;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.support-question summary {
+  font-size: 1.05rem;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.support-question summary::marker {
+  color: #c70039;
+}
+
+.support-question p {
+  color: #666666;
+  line-height: 1.8;
+  margin: 1rem 0 0;
+}
+
+.support-question[open] {
+  border-color: #c70039;
+}
+
+@media (max-width: 40rem) {
+  .support-hero {
+    padding: 4rem 1.5rem;
+  }
+
+  .support-content {
+    padding: 3rem 1rem;
+  }
+
+  .support-form {
+    padding: 1.5rem;
+  }
+
+  .support-form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .support-heading h2 {
+    font-size: 1.7rem;
+  }
+
+  .support-button {
+    width: 100%;
+  }
+}
